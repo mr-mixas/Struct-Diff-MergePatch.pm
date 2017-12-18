@@ -17,6 +17,14 @@ our @EXPORT_OK = qw(
 Struct::Diff::MergePatch - JSON Merge Patch
 (L<rfc7396|https://tools.ietf.org/html/rfc7396>) for perl structures
 
+=begin html
+
+<a href="https://travis-ci.org/mr-mixas/Struct-Diff-MergePatch.pm"><img src="https://travis-ci.org/mr-mixas/Struct-Diff-MergePatch.pm.svg?branch=master" alt="Travis CI"></a>
+<a href='https://coveralls.io/github/mr-mixas/Struct-Diff-MergePatch.pm?branch=master'><img src='https://coveralls.io/repos/github/mr-mixas/Struct-Diff-MergePatch.pm/badge.svg?branch=master' alt='Coverage Status'/></a>
+<a href="https://badge.fury.io/pl/Struct-Diff-MergePatch"><img src="https://badge.fury.io/pl/Struct-Diff-MergePatch.svg" alt="CPAN version"></a>
+
+=end html
+
 =head1 VERSION
 
 Version 0.01
@@ -89,7 +97,7 @@ sub diff($;$) {
 
 Apply patch.
 
-    $result = patch($thing, $patch);
+    patch($target, $patch);
 
 =cut
 
